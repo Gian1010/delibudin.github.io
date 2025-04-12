@@ -3,9 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Delicias de Budines</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefaf6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(135deg, #ffcc99, #ff9966);
+            padding: 40px 20px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .about {
+            text-align: center;
+        }
+        .about img {
+            width: 180px;
+            border-radius: 50%;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product h3 {
+            margin: 10px 0;
+            color: #663300;
+        }
+        .product p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        #contact {
+            background-color: #ffcc99;
+            color: #663300;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        #contact h2 {
+            margin-bottom: 20px;
+        }
+        #contact a {
+            color: #663300;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #ff9966;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Delicias de Budines</h1>
+        <p>Los mejores budines hechos con amor y dedicación</p>
+    </header>
+
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <img src="https://via.placeholder.com/180" alt="Foto del dueño">
+        <p>Somos un negocio familiar apasionado por la repostería. Cada budín es elaborado con los mejores ingredientes y mucho cariño, para que disfrutes de un sabor único en cada bocado.</p>
+    </section>
+
+    <section id="products">
+        <h2>Nuestros Budines</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Budín de vainilla">
+                <h3>Budín de Vainilla</h3>
+                <p>Un clásico que nunca falla. Suave y delicioso.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Budín de chocolate">
+                <h3>Budín de Chocolate</h3>
+                <p>Para los amantes del chocolate, ¡una delicia irresistible!</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Budín de limón">
+                <h3>Budín de Limón</h3>
+                <p>Fresco y cítrico, perfecto para cualquier ocasión.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>¿Quieres hacer un pedido o tienes alguna consulta? ¡Contáctanos!</p>
+        <p>Email: <a href="mailto:contacto@deliciasdebudines.com">contacto@deliciasdebudines.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Delicias de Budines. Todos los derechos reservados.</p>
+        <p>Contáctanos por WhatsApp: 
+            <a href="https://wa.me/5493624205752" target="_blank" style="color: #fff; text-decoration: underline;">
+                +54 9 36 2420-5752
+            </a>
+        </p>
+    </footer>
 </body>
 </html>
